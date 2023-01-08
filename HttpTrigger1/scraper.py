@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 from urllib.parse import urldefrag, urljoin
+import time
 
 from HttpTrigger1.tableitem import TableItem
 
@@ -59,6 +60,7 @@ class MyScraper:
             next_page = page + 1
             base_url, fragment = urldefrag(url)
             absolute_next_url = urljoin(base_url, next_url)
+            time.sleep(1)
             data.extend(self.scrape(absolute_next_url, page=next_page))
 
         return data

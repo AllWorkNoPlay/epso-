@@ -1,3 +1,4 @@
+import time
 from bs4 import BeautifulSoup
 import os
 import glob
@@ -61,6 +62,7 @@ class MyScraper0:
             next_page = page + 1
             base_url, fragment = urldefrag(url)
             absolute_next_url = urljoin(base_url, next_url)
+            time.sleep(1)
             data.extend(self.scrape(absolute_next_url, page=next_page))
 
         return data
