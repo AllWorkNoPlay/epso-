@@ -12,3 +12,6 @@ The function is written in python and uses BeautifulSoup for the scraping.
 
 The Azure Function will run on a schedule in order to periodically update the data (e.g. hourly).
 The mobile app will consume the JSON file ( https://jobdata.blob.core.windows.net/jobs/jobs.json )
+
+## Frontend
+Now that the JSON file is ready, I need to create a mobile client for it (TODO)
