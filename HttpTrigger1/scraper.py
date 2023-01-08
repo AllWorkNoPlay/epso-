@@ -5,7 +5,7 @@ import time
 
 from HttpTrigger1.tableitem import TableItem
 
-class MyScraper:
+class scraper:
     def __init__(self):
         self.data = []
 
