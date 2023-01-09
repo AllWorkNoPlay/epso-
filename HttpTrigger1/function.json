@@ -12,6 +12,13 @@
       ]
     },
     {
+      "authLevel": "function",
+      "type": "timerTrigger",
+      "direction": "in",
+      "name": "timer",
+      "schedule": "0 0 7 * * *"
+    },
+    {
       "type": "http",
       "direction": "out",
       "name": "$return"
