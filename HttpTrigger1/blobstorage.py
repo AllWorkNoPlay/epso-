@@ -11,4 +11,6 @@ class blobstorage:
         BLOB_NAME = settings['blob_name']
 
         blob_client = BlobClient.from_connection_string(conn_str=CONNECTION_STRING, container_name=CONTAINER_NAME, blob_name=BLOB_NAME)
-        blob_client.upload_blob(json)
+        blob_client.upload_blob(json, overwrite=True)
+
+
